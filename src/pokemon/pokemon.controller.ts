@@ -26,8 +26,8 @@ export class PokemonController {
   }
 
   @Get(':id')
-  findOne(@Param('id') id: string) {
-    return this.pokemonService.findOne(+id);
+  findOne(@Param('id') term: string) {
+    return this.pokemonService.findOne(term);
   }
 
   @Patch(':id')
