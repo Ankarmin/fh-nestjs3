@@ -16,7 +16,7 @@ async function bootstrap() {
       skipUndefinedProperties: true,
     }),
   );
-  await app.listen(process.env.PORT ?? 3000);
+  await app.listen(process.env.PORT!);
   console.log(`Application running on port ${process.env.PORT}`);
 }
 bootstrap();
